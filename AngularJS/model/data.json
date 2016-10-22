@@ -1,0 +1,31 @@
+﻿/*
+    http://www.json-generator.com/
+
+[
+  '{{repeat(1000, 1000)}}',
+  {
+    id: '{{index()}}',
+
+    data: 
+      {
+        name: function (tags) {
+          var names = ['The good', 'The bad', 'The ugly', 'The strange', 'Mad Max'];
+          return names[tags.integer(0, names.length - 1)];
+        },
+        likes_count: '{{integer(1, 100)}}',
+        status: '{{bool()}}',
+        path : function (tags) 
+        {
+          var paths = ['/assets/img/good.jpg', '/assets/img/bad.jpg', '/assets/img/ugly.jpg', '/assets/img/strange.jpg', '/assets/img/mad.jpg'];
+          return paths[tags.integer(0, paths.length - 1)];
+        },
+        author: function (tags) {
+          var paths = ['Olga', 'Oleg', 'Ivan', 'Den'];
+          return paths[tags.integer(0, paths.length - 1)];
+        }
+      }
+  	
+  }
+]
+
+*/

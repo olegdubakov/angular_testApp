@@ -1,0 +1,36 @@
+﻿<div class="container photo-view">
+    <h1>
+        Photo gallery <sup class="text-primary">Photo</sup>
+    </h1>
+
+    <hr />
+
+    <section class="row" ng-controller="photo">
+        <figure class="col-lg-6 col-sm-6 col-md-6 text-center image-wrapper">
+            <img src="{{ path }}"/>
+        </figure>
+        <figure class="col-lg-6 col-sm-6 col-md-6 description-wrapper">
+            <p>
+                Photo name:
+            </p>
+            <input type="text" value="{{ name }}" ng-model="name"/>
+            <p class="author">
+                Author: {{ author }}
+            </p>
+            <p>
+                <input type="checkbox" ng-checked="{{ status }}" ng-model="status" /> visible
+            </p>
+            <p>
+                <div class="glyphicon glyphicon-heart"></div> {{ likes_count }}
+            </p>
+            <div class="button-holder">
+                <a class="btn btn-success" ng-click="saveChanges();">
+                    Save
+                </a>
+                <a class="btn btn-default" ng-href="#/">
+                    Cancel
+                </a>
+            </div>
+        </figure>
+    </section>
+</div>

@@ -1,0 +1,42 @@
+﻿<div class="container home-view">
+    <h1>
+        Photo gallery <sup class="text-primary">Home</sup>
+    </h1>
+
+    <hr/>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name <input type="text" ng-model="search.data.name" />
+                </th>
+                <th>
+                    Likes count
+                </th>
+                <th>
+                    Visible
+                </th>
+            </tr>
+        </thead>
+        <tbody ng-controller="home" ng-model="name">
+            <tr ng-repeat="object in data | filter:search:strict" ng-click="changeDetails(object.id);">
+                <td>
+                    {{ object.id }}
+                </td>
+                <td>
+                    {{ object.data.name }}
+                </td>
+                <td>
+                    {{ object.data.likes_count }}
+                </td>
+                <td>
+                    <input type="checkbox" disabled ng-checked="{{ object.data.status }}" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

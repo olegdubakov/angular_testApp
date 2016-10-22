@@ -1,0 +1,6 @@
+D:\ForFun\AngularJS\WebApplication1\bin\WebApplication1.dll.config
+D:\ForFun\AngularJS\WebApplication1\bin\WebApplication1.dll
+D:\ForFun\AngularJS\WebApplication1\bin\WebApplication1.pdb
+D:\ForFun\AngularJS\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+D:\ForFun\AngularJS\WebApplication1\obj\Debug\WebApplication1.dll
+D:\ForFun\AngularJS\WebApplication1\obj\Debug\WebApplication1.pdb

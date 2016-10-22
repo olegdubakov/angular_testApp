@@ -1,0 +1,61 @@
+﻿body 
+{
+    .home-view
+    {
+        table
+        {
+            thead
+            {
+                color: #777;
+                background-color: ~"rgba(51, 122, 183, 0.4)";
+            }
+
+            tbody
+            {
+                tr
+                {
+                    cursor: pointer;
+
+                    &:hover
+                    {
+                        background-color: ~"rgba(51, 122, 183, 0.3)";
+                    }
+
+                    input[type="checkbox"][disabled]
+                    {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .photo-view
+    {
+        .image-wrapper
+        {
+            img
+            {
+                width: 95%;
+            }
+        }
+
+        .description-wrapper
+        {
+            .author
+            {
+                margin-top: 10px
+            }
+
+            .button-holder
+            {
+                margin-top: 30px;
+
+                a
+                {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

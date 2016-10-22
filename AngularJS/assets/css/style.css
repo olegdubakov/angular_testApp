@@ -1,0 +1,26 @@
+﻿body .home-view table thead {
+  color: #777;
+  background-color: rgba(51, 122, 183, 0.4);
+}
+body .home-view table tbody tr {
+  cursor: pointer;
+}
+body .home-view table tbody tr:hover {
+  background-color: rgba(51, 122, 183, 0.3);
+}
+body .home-view table tbody tr input[type="checkbox"][disabled] {
+  cursor: pointer;
+}
+body .photo-view .image-wrapper img {
+  width: 95%;
+}
+body .photo-view .description-wrapper .author {
+  margin-top: 10px;
+}
+body .photo-view .description-wrapper .button-holder {
+  margin-top: 30px;
+}
+body .photo-view .description-wrapper .button-holder a {
+  width: 20%;
+}
+/*# sourceMappingURL=style.css.map */
